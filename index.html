@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <!-- Google Fonts CDN's -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+
+    <!-- Main JS File -->
+    <script type="text/javascript" src="./index.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <section id="container-left">
+        <dt>Learn to code by watching others</dt>
+        <dd>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </dd>
+      </section>
+      <section id="container-right">
+        <div id="container-right-inner">
+          <button class="btn" id="try-btn" onclick="tryClicked()">
+            Try it free 7 days <span>then $20/mo. thereafter</span>
+          </button>
+          <form autocomplete="off" onsubmit="FormSubmitted(event)" novalidate>
+            <div class="textbox-container">
+              <div class="textbox-inner">
+                <input
+                  class="textbox-in"
+                  type="text"
+                  placeholder="First Name"
+                  oninput="textboxTextChanged(this)"
+                />
+                <img
+                  class="textbox-error-icon"
+                  alt=""
+                  src="./images/icon-error.png"
+                />
+              </div>
+              <p class="textbox-error">First Name cannot be empty</p>
+            </div>
+            <div class="textbox-container">
+              <div class="textbox-inner">
+                <input
+                  class="textbox-in"
+                  type="text"
+                  placeholder="Last Name"
+                  oninput="textboxTextChanged(this)"
+                />
+                <img
+                  class="textbox-error-icon"
+                  alt=""
+                  src="./images/icon-error.png"
+                />
+              </div>
+              <p class="textbox-error"></p>
+            </div>
+            <div class="textbox-container">
+              <div class="textbox-inner">
+                <input
+                  id="email-in"              
+                  class="textbox-in"
+                  type="text"
+                  placeholder="Email Address"
+                  oninput="textboxTextChanged(this)"
+                />
+                <img
+                  class="textbox-error-icon"
+                  alt=""
+                  src="./images/icon-error.png"
+                />
+              </div>
+              <p class="textbox-error"></p>
+            </div>
+            <div class="textbox-container">
+              <div class="textbox-inner">
+                <input
+                  class="textbox-in"
+                  type="password"
+                  placeholder="Password"
+                  oninput="textboxTextChanged(this)"
+                />
+                <img
+                  class="textbox-error-icon"
+                  alt=""
+                  src="./images/icon-error.png"
+                />
+              </div>
+              <p class="textbox-error"></p>
+            </div>
+            <button class="btn" id="free-btn">Claim your free trial</button>
+            <p id="terms-row">
+              By clicking the button, you are agreeing to our
+              <a href="#">Terms and Services</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
