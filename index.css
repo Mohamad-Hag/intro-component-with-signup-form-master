@@ -135,6 +135,7 @@ form
     border-radius: 8px;
     padding: 5%;
     background: var(--pr-txt-cr);    
+    box-shadow: 0 5px 0 0 var(--sh-cr1);
 }
 .textbox-container
 {
